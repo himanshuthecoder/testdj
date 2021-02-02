@@ -1,0 +1,592 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Home | ParkExo</title>
+    <meta content="Find amazing parking near you. Pre book your space, Get quick & easy parking and it is safe and secure service." name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.ico' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+   <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+    <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> -->
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <!-- <link href="assets/vendor/venobox/venobox.css" rel="stylesheet"> -->
+    <!-- <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/whatsapp/floating-wpp.css' %}">
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+            <!-- <h1 class="logo mr-auto"><a href="#" ParkExo</a></h1> -->
+            <img src="{% static 'assets/img/logo.png' %}" height="30px" width="180px">
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+    <main id="main">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero"  class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                    <h1>Find Amazing Parking Space Near You</h1>
+                    <h2><span class="text-slider-items">
+                        Pre Book Your Space, Quick and Easy Parking, Safe and Secure
+                        </span>
+                        <strong class="text-slider"></strong>
+                    </h>
+                    <div class="d-lg-flex mt-5">
+                        <!-- <a href="#about" class="btn-get-started scrollto">S</a> -->
+                        <a href="#" class="btn-get-started ml-2 " onclick="$('#contactform_modal').modal('show');">Get Your Booking</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <!-- <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
+                    <!-- <img src="https://source.unsplash.com/720x500/?parking-lot" class="img-fluid animated" alt=""> -->
+
+                    </div>
+            </div>
+        </div>
+    </section><!-- End Hero -->
+  <!--Section: Content-->
+
+  <!-- ======= Team Section ======= -->
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>How It's Works?</h2>
+                    <p>.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                            <div><img src="{% static 'assets/img/icons/device1.svg' %}" height="70px" ></div>
+                            <div class="member-info">
+                                <h4>Search Space</h4>
+                                <p>Find parking lots nearby your location with ParkExo professional experience.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                            <div><img src="{% static 'assets/img/icons/money.svg' %}" height="70px"></div>
+                            <div class="member-info">
+                                <h4>Book Space</h4>
+                                                                <!-- <span>Chief Technology Officer</span> -->
+                               <p>Get your parking space before visiting the parking area</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+                            <div><img src="{% static 'assets/img/icons/car-park.svg' %}" height="70px"></div>
+                            <div class="member-info">
+                                <h4>Arrive & Park</h4>
+                                <p>Experience hasselfree parking and payment system</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Team Section -->
+
+
+
+
+        <!-- ======= Why Choose ParkExo Section ======= -->
+        <section id="why-choose-us">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-8 mt-5 p-5 text-light" id="why-choose-us-content">
+                        <div class="mt-3 text-center"><h3>Why Choose ParkExo</h3></div>
+                        <div class="mt-2 text-center">We care your vehicle as our own</div>
+                        <div class="row p-2 mt-5">
+                            <div class="col-6">
+                                <div class="mb-2"><img src="{% static 'assets/img/icons/garage.svg' %}" height="70px"></div>
+                                <div><h4>Stress Free Booking</h4></div>
+                                <div> B2C business and offer a robust web and mobile app development service t</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-2"><img src="{% static 'assets/img/icons/24.svg' %}" height="70px"></div>
+                                <div><h4>24 hr Services</h4></div>
+                                <div> B2C business and offer a robust web and mobile app development service t</div>
+                            </div>
+                        </div>
+                        <div class="row p-2 mt-4 mb-4">
+                            <div class="col">
+                                <div class="mb-2"><img src="{% static 'assets/img/icons/loan.svg' %}" height="70px"></div>
+                                <div><h4>Save Money & Time</h4></div>
+                                <div> B2C business and offer a robust web and mobile app development service t</div>
+
+                            </div>
+                            <div class="col">
+                                <div class="mb-2"><img src="{% static 'assets/img/icons/rating.svg' %}" height="70px"></div>
+                                <div><h4>Best Parking management</h4></div>
+                                <div> B2C business and offer a robust web and mobile app development service t</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="why-choose-us-mobile">
+            <div class="container" >               
+                 <div class="mt-4 text-light" id="why-choose-us-content">
+                        <div class="mt-3 text-center"><h3>Why Choose ParkExo</h3></div>
+                        <div class="mt-2 text-center">We care your vehicle as our own.</div>
+                        <div class="row mt-5">
+                            <div class="col-sm-6 p-3">
+                                <div class="mb-2"><img src="{% static 'assets/img/icons/garage.svg' %}" height="70px"></div>
+                                <div><h4>Stress Free Booking</h4></div>
+                                <div> B2C business and offer a robust web and mobile app development service t</div>
+                            </div>
+                            <div class="col-sm-6 p-3">
+                                <div class="mb-2"><img src="{% static 'assets/img/icons/24.svg' %}" height="70px"></div>
+                                <div><h4>Stress Free Booking</h4></div>
+                                <div> B2C business and offer a robust web and mobile app development service t</div>
+                            </div>
+                        </div>
+                        <div class="row mt-6">
+                            <div class="col-sm-6 p-3">
+                                <div class="mb-2"><img src="{% static 'assets/img/icons/loan.svg' %}" height="70px"></div>
+                                <div><h4>Stress Free Booking</h4></div>
+                                <div> B2C business and offer a robust web and mobile app development service t</div>
+
+                            </div>
+                            <div class="col-sm-6 p-3">
+                                <div class="mb-2"><img src="{% static 'assets/img/icons/rating.svg' %}" height="70px"></div>
+                                <div><h4>Stress Free Booking</h4></div>
+                                <div> B2C business and offer a robust web and mobile app development service t</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+        </section>
+
+
+
+
+         <!--Section: Content-->
+
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Parking made Easy</h2>
+                    <p>We’re chosen by professionals. Book you parking slot now.</p>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><img src="{% static 'assets/img/service/f1.jpg' %}" alt="team-image" width="100%" height="200px"></div>
+                            <h4><a href="">Pre Book Your Space</a></h4>
+                            <p>We offer a scalable resource model for businesses to manage project needs or intermittent deadlines. Our dedicated development teams seamlessly engage with clients, ohshore or offshore teams.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><img src="{% static 'assets/img/service/f2.jpg' %}" alt="team-image" width="100%" height="200px"></div>
+                            <h4><a href="">Quick & Easy Parking</a></h4>
+                            <p>ParkExo outlines a complete plan to modernize your legacy system or develop a new product using our expertise. We understand the scope, explore the potential and reduce the develpment stress, with efficient and performing application.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><img src="{% static 'assets/img/service/f3.jpg'%}" alt="team-image" width="100%" height="200px"></div>
+                            <h4><a href="">Safe & Secure</a></h4>
+                            <p>We match unique development needs of B2B or B2C business and offer a robust web and mobile app development service that accelarates business profitability in the market with our developed high-performing application.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Services Section -->
+
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>About Us</h2>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p>
+                            ParkExo was born to make high quality enterprises solutions. We will be the thinker and makers for your service. Dedicating our knowledge to create user-centric designs backed by our experience.
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i>Strong relationships</li>
+                            <li><i class="ri-check-double-line"></i>Excellence at work</li>
+                            <li><i class="ri-check-double-line"></i>Innovation & Creativity</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            Since day one we’ve believed in your success, had faith in our kick-butt skills and swore by the computer code. Like we said, Crafting amazing digital solutions is not our work, it’s our duty<br><br>
+                            <!-- We have successfully served more than 50+ success stories ranging from Enterprises level to Start-ups, We have grown alognside the success of the company.-->
+                        </p>
+                         <ul>
+                            <li><i class="ri-check-double-line"></i>Fast Development</li>
+                            <li><i class="ri-check-double-line"></i>Excellence at work</li>
+                            <li><i class="ri-check-double-line"></i>Innovation & Creativity</li>
+                        </ul>
+                        <!--<a href="#" class="btn-learn-more">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Us Section -->
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us section-bg">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+                        <div class="content">
+                            <h3>See Our Brands on <strong>iOS, Android and Web</strong></h3>
+                            <p>We exel in delivering the best-suited solution as per the custom needs, be it small start-ups in their ideation phase or mid-size businesses focusing on growth or large enterprises actively optimizing processes across varied industries.
+                            </p>
+                        </div>
+                        <div class="accordion-list">
+                            <ul>
+
+                                <li>
+                                    <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span>Looking for Custom Software Development Service Provider?<i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
+                                    <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                                        <p>
+                                            From a growing business to an established one, ParkExo is here for you.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Searching for Expert Software Development Services? <i class="ri-arrow-down-s-line icon-show"></i><i class="bx ri-arrow-up-s-line icon-close"></i></a>
+                                    <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                                        <p>Let our dedicated team
+                                            take the responsibility.<br>
+                                            <a href="#"  onclick="$('#contactform_modal').modal('show')" class="btn badge btn-primary btn-sm" style='max-width: 175px;'>Talk to our Experts!</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Get Peice of Mind With ParkExo <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
+                                    <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                                        The work you will love<br>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("{%static 'assets/img/vertical-parking.jpg' %}"); background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark-grey-text" id="download-app">
+    <div class="container">
+    <div class="row pr-lg-5">
+      <div class="col-md-7 mb-4">
+
+        <div class="view">
+          <img src="{% static 'assets/img/download-app.svg' %}" class="img-fluid" alt="smaple image">
+        </div>
+
+      </div>
+      <div class="col-md-5 d-flex align-items-center">
+        <div>
+          
+          <h3 class="font-weight-bold mb-4">Download The ParkExo Parking App</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adip elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
+
+            <button type="button" class="btn btn-orange btn-rounded mx-0">Download</button>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-left">
+                        <h3>Yes, I am looking for parking space</h3>
+                        <p>More than 3000+ customers trust</p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" onclick="$('#contactform_modal').modal('show')" href="#">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Cta Section -->
+        <!-- ======= Frequently Asked Questions Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="ri-question-line icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                                <p>
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="ri-question-line icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="ri-question-line icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="ri-question-line icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
+                            <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="500">
+                            <i class="ri-question-line icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ri-arrow-down-s-line icon-show"></i><i class="ri-arrow-up-s-line icon-close"></i></a>
+                            <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section><!-- End Frequently Asked Questions Section 
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h3>Do You Have Any Queries Regarding Our Pricing?</h3>
+                        <p class="mt-3">
+                                Our team will respond to your inquries within 48 hours.
+                        </p>
+                        <div class="d-lg-flex mt-5">
+                        <!-- <a href="#about" class="btn-get-started scrollto">S</a> -->
+                        <a href="#" class="btn-get-started ml-2 " onclick="$('#contactform_modal').modal('show');">Get Your Booking</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h3>Do You Have Any Question And Want To Contact Us?</h3>
+                        <div class="d-lg-flex d-flex-column mt-3">
+                            <p>Feel Free To Contact Us</p>
+                        </div>
+                        <div class="phone mt-5">
+                                <i class="ri-phone-fill"> </i>
+                                <h4 class="m-2">+91 82953 44931</h4>
+                                
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h3>Our Social Networks</h3>
+                        <p class="mt-3">Follow us on social media for latest News, Blogpost, Business offers and new Developer Hiring.</p>
+                        <div class="social-links mt-5">
+                            <a href="#" class="twitter"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://facebook.com/ParkExoadmin" class="facebook"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://instagram.com/ParkExo" class="instagram"><i class="ri-instagram-fill"></i></a>
+                            <a href="#" class="linkedin"><i class="ri-linkedin-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>ParkSmart</span></strong>. All Rights Reserved!
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+    <div id="preloader"></div>
+    <div id="whatsappButton"></div>
+
+    <!-- Contact Model -->
+    <!-- Button trigger modal -->
+    <div class="modal fade " id="contactform_modal" tabindex="-1" role="dialog" aria-labelledby="contactform_modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  "  role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="username" class="col-sm-3 col-form-label">Name</label>
+                <div class="col-sm-9 input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text text-primary ri-user-fill"></div>
+                    </div>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="usermobile" class="col-sm-3 col-form-label">Contact No.</label>
+                <div class="col-sm-9 input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text text-primary ri-phone-fill"></div>
+                    </div>
+                  <input type="text" class="form-control" id="usermobile" placeholder="Contact Number">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="usermessage" class="col-sm-3 col-form-label">Message</label>
+                <div class="col-sm-9">
+                  <textarea type="textarea" class="form-control" id="usermessage" placeholder="Tell Us something about your idea"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a type="button" class="btn btn-primary" role=button onclick="openMailClient()" >Send</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Mode End -->
+    <script type="text/javascript">
+
+    </script>
+
+    <!-- whatsapp vendor files -->
+    <script type="text/javascript" src="{% static 'assets/vendor/whatsapp/jquery-3.3.1.min.js' %}"></script>
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> -->
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+    <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <!-- <script src="assets/vendor/venobox/venobox.min.js"></script> -->
+    <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'assets/vendor/whatsapp/floating-wpp.js' %}"></script>
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <!-- typed text script -->
+    <!-- Template Main JS File -->
+    <script>
+        $(document).ready()
+        {
+          setTimeout(function(){ $('#contactform_modal').modal('show')}, 10000*10);
+        }
+
+        function openMailClient()
+        {
+            var subject = "Want to discuss on my project";
+            var username = $('#username').val();
+            var usermessage = $('#usermessage').val();
+            var body = "Hey ParkExo \n I'm "+username+" and want to discuss on my project so Let's schedule a meet ASAP and My Message "+usermessage;
+
+            window.open("mailto:info@ParkExo.com?subject="+subject+"&body="+body);
+        }
+    if ($(".text-slider").length == 1) {
+
+        var typed_strings =
+            $(".text-slider-items").text();
+
+        var typed = new Typed(".text-slider", {
+            strings: typed_strings.split(", "),
+            typeSpeed: 50,
+            loop: true,
+            backDelay: 900,
+            backSpeed: 30,
+        });
+    }
+
+    $(function() {
+        $('#whatsappButton').floatingWhatsApp({
+            phone: '+918295344931',
+            popupMessage: 'Hii, how can we help you?',
+            message: "I'd like to book parking space.",
+            showPopup: true,
+            showOnIE: true,
+            headerTitle: '<img class="rounded m-1" src="{% static "assets/img/whatsapp.svg" %}" width="20px" height="20px" /> Welcome!',
+            headerColor: '#30336b',
+            backgroundColor: '#dfe4ea',
+            buttonImage: '<img src="{% static "assets/img/whatsapp.svg" %}" />'
+        });
+    });
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90652126-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-90652126-2');
+
+    </script>
+</body>
+
+</html>
